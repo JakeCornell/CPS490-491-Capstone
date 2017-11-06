@@ -109,7 +109,7 @@ figure {
   bottom: 0;
   right: 0;
   z-index: 1;
-  background: red;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .fh5co-cover {
