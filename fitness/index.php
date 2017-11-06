@@ -709,7 +709,7 @@
 			</div>
 		</div>-->
 		
-		<div id="fh5co-blog-section">
+		<!--<div id="fh5co-blog-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
@@ -784,7 +784,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<!-- fh5co-blog-section -->
 		<footer>
 			<div id="footer">
