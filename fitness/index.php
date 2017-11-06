@@ -141,7 +141,7 @@
 			</div>
 		</div>
 		<!-- end:fh5co-hero -->
-		<div id="fh5co-schedule-section" class="fh5co-lightgray-section">
+		<!--<div id="fh5co-schedule-section" class="fh5co-lightgray-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
@@ -201,7 +201,6 @@
 									</div>
 								</div>
 							</div>
-							<!-- END sched-content -->
 
 							<div class="schedule-content" data-day="monday">
 								<div class="col-md-3 col-sm-6">
@@ -238,7 +237,6 @@
 								</div>
 								
 							</div>
-							<!-- END sched-content -->
 
 							<div class="schedule-content" data-day="tuesday">
 								<div class="col-md-3 col-sm-6">
@@ -274,7 +272,6 @@
 									</div>
 								</div>
 							</div>
-							<!-- END sched-content -->
 
 							<div class="schedule-content" data-day="wednesday">
 								<div class="col-md-3 col-sm-6">
@@ -310,7 +307,7 @@
 									</div>
 								</div>
 							</div>
-							<!-- END sched-content -->
+
 
 							<div class="schedule-content" data-day="thursday">
 								<div class="col-md-3 col-sm-6">
@@ -346,7 +343,6 @@
 									</div>
 								</div>
 							</div>
-							<!-- END sched-content -->
 
 							<div class="schedule-content" data-day="friday">
 								<div class="col-md-3 col-sm-6">
@@ -382,7 +378,6 @@
 									</div>
 								</div>
 							</div>
-							<!-- END sched-content -->
 
 							<div class="schedule-content" data-day="saturday">
 								<div class="col-md-3 col-sm-6">
@@ -418,14 +413,13 @@
 									</div>
 								</div>
 							</div>
-							<!-- END sched-content -->
 						</div>
 
 						
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<div class="fh5co-parallax" style="background-image: url(images/home-image-3.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
