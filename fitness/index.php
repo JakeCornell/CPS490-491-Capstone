@@ -605,7 +605,7 @@
 				</div>
 			</div>
 		</div>-->
-		<div class="fh5co-parallax" style="background-image: url(images/home-image-2.jpg);" data-stellar-background-ratio="0.5">
+		<!--<div class="fh5co-parallax" style="background-image: url(images/home-image-2.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -620,7 +620,7 @@
 					</div>
 				</div>
 			</div>
-		</div><!-- end: fh5co-parallax -->
+		</div>
 		<div id="fh5co-pricing-section" class="fh5co-pricing fh5co-lightgray-section">
 			<div class="container">
 				<div class="row">
@@ -707,7 +707,7 @@
 				</div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		
 		<div id="fh5co-blog-section">
 			<div class="container">
