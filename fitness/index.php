@@ -91,7 +91,7 @@
 								<li><a href="about.html">About</a></li>
 								<li><a href="contact.html">Contact</a></li>
                                 <li><a href="contact.html">Account</a></li>
-								<li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+								<!-- <li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li> -->
 							</ul>
 						</nav>
 					</div>
@@ -115,7 +115,7 @@
 						<label for="passID" class="sr-only">Password</label>
 						<input type="password" id="passID" class="form-control" placeholder="Password" required>
 						<BR>
-						<!-- <button class="btn btn-lg btn-primary btn-block"  onClick="javascript:auth();return false;" >Login</button> -->
+						<button class="btn btn-lg btn-primary btn-block"  onClick="javascript:auth();return false;" >Login</button>
 					</form>
 					</div>
 				</div>
