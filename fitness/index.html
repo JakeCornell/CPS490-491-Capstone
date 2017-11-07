@@ -148,7 +148,7 @@
 					<div class="row">
 						<div class="col-md-4 animate-box">
 							<h3 class="section-title">About Us</h3>
-							<p>We are three computer science students with a passion for fitness. Our Goal with this project is to proviode our users a wealth of information about fitness as well as a one stop shop for their equipment and suplement needs. </p>
+							<p>We are three Computer Science students with a passion for fitness. Our Goal with this project is to proviode our users a wealth of information about fitness as well as a one stop shop for their equipment and suplement needs. </p>
 						</div>
 
 						<div class="col-md-4 animate-box">
@@ -160,7 +160,7 @@
 							</ul>
 						</div>
 						<div class="col-md-4 animate-box">
-							<h3 class="section-title">Drop us a line</h3>
+							<h3 class="section-title">Contact Us</h3>
 							<form class="contact-form">
 								<div class="form-group">
 									<label for="name" class="sr-only">Name</label>
@@ -186,7 +186,6 @@
 								<a href="#"><i class="icon-twitter2"></i></a>
 								<a href="#"><i class="icon-facebook2"></i></a>
 								<a href="#"><i class="icon-instagram"></i></a>
-								<a href="#"><i class="icon-dribbble2"></i></a>
 								<a href="#"><i class="icon-youtube"></i></a>
 							</p>
 						</div>
