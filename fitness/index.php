@@ -79,7 +79,7 @@
 									<a href="index.html">Home</a>
 								</li>
 								<li>
-									<a href="classes.html" class="fh5co-sub-ddown">Store</a>
+									<a href="store.html" class="fh5co-sub-ddown">Store</a>
 									 <ul class="fh5co-sub-menu">
 									 	<li><a href="left-sidebar.html">Supplements</a></li>
 									 	<li><a href="right-sidebar.html">Equipment</a></li>
