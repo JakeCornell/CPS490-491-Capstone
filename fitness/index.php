@@ -81,8 +81,8 @@
 								<li>
 									<a href="store.php" class="fh5co-sub-ddown">Store</a>
 									 <ul class="fh5co-sub-menu">
-									 	<li><a href="left-sidebar.html">Supplements</a></li>
-									 	<li><a href="right-sidebar.html">Equipment</a></li>
+									 	<li><a href="supplements.php">Supplements</a></li>
+									 	<li><a href="equipment.php">Equipment</a></li>
 									</ul>
 								</li>
 								<li>
