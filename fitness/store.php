@@ -61,23 +61,23 @@
 						<!-- START #fh5co-menu-wrap -->
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
-								<li>
-									<a href="index.php">Home</a>
-								</li>
 								<li class="active">
+									<a href="index.html">Home</a>
+								</li>
+								<li>
 									<a href="store.php" class="fh5co-sub-ddown">Store</a>
 									 <ul class="fh5co-sub-menu">
-									 	<li><a href="store.php">Supplements</a></li>
-									 	<li><a href="store.php">Equipment</a></li>
+									 	<li><a href="left-sidebar.html">Supplements</a></li>
+									 	<li><a href="right-sidebar.html">Equipment</a></li>
 									</ul>
 								</li>
-							
 								<li>
-									<a href="schedule.html">Schedule</a>
+									<a href="schedule.html">Programs</a>
 								</li>
-								<li><a href="trainer.html">Trainers</a></li>
 								<li><a href="about.html">About</a></li>
 								<li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.html">Account</a></li>
+								<!-- <li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li> -->
 							</ul>
 						</nav>
 					</div>
