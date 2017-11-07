@@ -85,7 +85,7 @@
 						<div class="fh5co-intro fh5co-table-cell animate-box">
 							<h1 class="text-center">Commit To Be Fit</h1>
 							<p>Join our talented and supportive community today!</a></p>
-							 <form class="form-login" action="index.php" method="POST">
+							 <form class="form-login" action="" method="POST">
 								
 								<label for="user" class="sr-only">Username</label>
 								<input type="text" name="user" class="form-control" placeholder="Email address" required autofocus>
@@ -103,20 +103,20 @@
 
 	
 		<?php  
-		
+			
 			if(isset($_POST["submit"])){  
 			  
 				if(!empty($_POST['user']) && !empty($_POST['pass'])) {  
 				    $user=$_POST['user'];  
 				    $pass=$_POST['pass'];  
 				  
-				    $con=mysql_connect('localhost','root','') or die(mysql_error());  
-				    mysql_select_db('gitfit') or die("cannot select DB");  
+				    $con=mysqli_connect('localhost','root','') or die(mysqli_error());  
+				    mysqli_select_db($con, 'gitfit') or die("cannot select DB");  
 				  
-				    $query=mysql_query("SELECT * FROM accounts WHERE username='".$user."' AND password='".$pass."'");  
-				    $numrows=mysql_num_rows($query);  
+				    $query=mysqli_query($con, "SELECT * FROM accounts WHERE username='".$user."' AND password='".$pass."'");  
+				    $numrows=mysqli_num_rows($query);  
 				    if($numrows!=0){  
-				    	while($row=mysql_fetch_assoc($query)){  
+				    	while($row=mysqli_fetch_assoc($query)){  
 				  		  $dbusername=$row['username'];  
 				   		  $dbpassword=$row['password'];  
 				   		}  
