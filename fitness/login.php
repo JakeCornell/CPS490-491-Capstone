@@ -63,6 +63,7 @@
 
 	</head>
 	<body>
+		
 
 		<div id="fh5co-header">
 			<header id="fh5co-header-section">
@@ -84,14 +85,14 @@
 						<div class="fh5co-intro fh5co-table-cell animate-box">
 							<h1 class="text-center">Commit To Be Fit</h1>
 							<p>Join our talented and supportive community today!</a></p>
-							 <form class="form-login" action="processLogin.php" method="POST">
+							 <form class="form-login" action="index.php" method="POST">
 								
-								<label for="userID" class="sr-only">Username</label>
-								<input type="text" id="userID" name="userID" class="form-control" placeholder="Email address" required autofocus>
-								<label for="passID" class="sr-only">Password</label>
-								<input type="password" id="passID" name="passID" class="form-control" placeholder="Password" required>
+								<label for="user" class="sr-only">Username</label>
+								<input type="text" name="user" class="form-control" placeholder="Email address" required autofocus>
+								<label for="pass" class="sr-only">Password</label>
+								<input type="password" name="pass" class="form-control" placeholder="Password" required>
 								<BR>
-								<button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Login</button>
+								<button type="submit" name="submit" class="btn btn-lg btn-primary btn-block">Login</button>
 							</form>
 						</div>
 					</div>
@@ -99,9 +100,10 @@
 			</div>
 		</div>
 
+
 	
-		<!--<?php  
-		/*
+		<?php  
+		
 			if(isset($_POST["submit"])){  
 			  
 				if(!empty($_POST['user']) && !empty($_POST['pass'])) {  
@@ -133,8 +135,8 @@
 				} else {  
 				    echo "All fields are required!";  
 				}  
-			}  */
-		?>-->  
+			} 
+		?> 
 		
 	
 
