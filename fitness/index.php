@@ -115,7 +115,7 @@
 						<label for="passID" class="sr-only">Password</label>
 						<input type="password" id="passID" class="form-control" placeholder="Password" required>
 						<BR>
-						<button class="btn btn-lg btn-primary btn-block"  onClick="javascript:auth();return false;" >Login</button>
+						<!-- <button class="btn btn-lg btn-primary btn-block"  onClick="javascript:auth();return false;" >Login</button> -->
 					</form>
 					</div>
 				</div>
