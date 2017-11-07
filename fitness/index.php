@@ -156,8 +156,7 @@
 							<ul class="contact-info">
 								<li><i class="icon-map-marker"></i>300 College Park, Dayton, OH 45469</li>
 								<li><i class="icon-phone"></i>+ 1235 2355 98</li>
-								<li><i class="icon-envelope"></i><a href="#">info@yoursite.com</a></li>
-								<li><i class="icon-globe2"></i><a href="#">www.yoursite.com</a></li>
+								<li><i class="icon-envelope"></i><a href="#">fit@getfit.com</a></li>
 							</ul>
 						</div>
 						<div class="col-md-4 animate-box">
