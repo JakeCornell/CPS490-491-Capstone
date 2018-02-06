@@ -91,6 +91,7 @@
 								<li><a href="about.html">About</a></li>
 								<li><a href="contact.html">Contact</a></li>
                                 <li><a href="contact.html">Account</a></li>
+                                <li><a href="contact.html"><?php session_start(); echo $_SESSION['username'] ?></a></li>
 								<!-- <li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li> -->
 							</ul>
 						</nav>
