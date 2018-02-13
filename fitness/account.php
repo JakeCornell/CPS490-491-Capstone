@@ -108,6 +108,12 @@
 								<span><a class="btn btn-primary" href="#">Start Your Journey</a></span>
 							</div>
 						</div>
+                        <div class ="accountEdit">
+                            <h2>Account Information</h2>
+                            <h3>Username</h3>
+                            <h3>Email</h3>
+                            <h3>Password</h3>
+                        </div>
 					</div>
 				</div>
 			</div>
