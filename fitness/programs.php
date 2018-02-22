@@ -103,9 +103,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-7">
-								<h2>Fitness &amp; Health <br>is a <b>Mentality</b></h2>
-								<p><span>Custom workout routines just for you!</span></p>
-								<span><a class="btn btn-primary" href="#">Start Your Journey</a></span>
+								<h2> Let's Get Started! </h2>
 							</div>
 						</div>
 					</div>
