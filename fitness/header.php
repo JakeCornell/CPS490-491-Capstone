@@ -2,20 +2,20 @@
     <div class="container">
         <div class="nav-header">
             <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-            <h1 id="fh5co-logo"><a href="index.html">Get<span>Fit</span></a></h1>
+            <h1 id="fh5co-logo"><a href="index.php">Get<span>Fit</span></a></h1>
             <!-- START #fh5co-menu-wrap -->
             <nav id="fh5co-menu-wrap" role="navigation">
                 <ul class="sf-menu" id="fh5co-primary-menu">
                     <li class="active">
                         <a href="index.php">Home</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="store.php" class="fh5co-sub-ddown">Store</a>
                         <ul class="fh5co-sub-menu">
                             <li><a href="supplements.php">Supplements</a></li>
                             <li><a href="equipment.php">Equipment</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="programs.php">Programs</a>
                     </li>
