@@ -7,7 +7,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>GitFit</title>
+	<title>GetFit</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -105,7 +105,7 @@
 							<div class="col-md-7">
 								<h2>Fitness &amp; Health <br>is a <b>Mentality</b></h2>
 								<p><span>Custom workout routines just for you!</span></p>
-								<span><a class="btn btn-primary" href="#">Start Your Journey</a></span>
+								<span><a class="btn btn-primary" href="programs.php">Start Your Journey</a></span>
 							</div>
 						</div>
 					</div>
