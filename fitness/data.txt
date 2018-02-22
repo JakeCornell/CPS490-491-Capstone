@@ -9,7 +9,7 @@ Jim Wendler's 5/3/1, https://jimwendler.com/collections/books-programs or https:
 nSuns LP, http://archive.is/2017.01.27-015129/https://www.reddit.com/r/Fitness/comments/5icyza/2_suns531lp_tdee_calculator_and_other_items_all/
 The GZCL Method, http://swoleateveryheight.blogspot.com/2014/07/the-gzcl-method-simplified_13.html
 Metallicadpa's PPL, https://www.reddit.com/r/Fitness/comments/37ylk5/a_linear_progression_based_ppl_program_for/
-Westside For Skinny Bastards, https://www.defrancostraining.com/westside-for-skinny-bastards-part3/
+Westside For Skinny Bastards, https://www.defrancostraining.com/westside-for-skinny-bastards-part3/ or http://www.powerliftingtowin.com/westside/
 PHUL (Power Hypertrophy Upper Lower), https://www.muscleandstrength.com/workouts/phul-workout
 PHAT (Power Hypertrophy Adaptive Training), http://www.simplyshredded.com/mega-feature-layne-norton-training-series-full-powerhypertrophy-routine-updated-2011.html
 Dumbbell Stopgap, http://www.reddit.com/r/Fitness/comments/zc0uy/a_beginner_dumbbell_program_the_dumbbell_stopgap/
@@ -43,7 +43,9 @@ US Navy Special Warfare PT Guide, http://www.sealswcc.com/navy-seal-naval-specia
 Las Vegas Metro PD 12 Week Program, http://studylib.net/doc/18303857/physical-fitness-training-12-week-preparation-program-ove...#
 MARSOC 10 Week Program, http://www.patriotdude.com/marine-corps-training/marsoc-workout-10-week-workout-schedule
 Tactical Barbell, http://www.tacticalbarbell.com/
-SOFlete, https://soflete.com/
+SOFlhttp://www.powerliftingtowin.com/destroy-the-opposition/
+Coan/Philippi, http://www.powerliftingtowin.com/coan-philippi-deadlift-routine/
+ete, https://soflete.com/
 Joe DeFranco's Limber 11, https://www.defrancostraining.com/ask-joe/44-flexibilitymobility/302-joe-ds-qlimber-11q-flexibility-routine.html
 Molding Mobility, https://phrakture.github.io/molding-mobility.html
 The World's Greatest Stretch, http://furthermore.equinox.com/cms/images/34f9d4bc-3958-423a-ae6e-847d286a33d4/en-us/worldsgreateststretch.pdf
@@ -51,3 +53,24 @@ Starting Stretching, https://phrakture.github.io/starting-stretching.html
 AGT: Stretching, http://agt.degreesofclarity.com/stretching/
 Greg Everett's Stretch Series, http://catalystathletics.com/articles/article.php?articleID=137
 BFS Flexibility Program, http://www.biggerfasterstronger.com/uploads/Flexibility%20Program.pdf
+Texas Method, https://www.t-nation.com/training/texas-method or http://www.powerliftingtowin.com/texas-method/
+Smolov, https://stronglifts.com/how-to-add-100-pounds-to-your-squat-smolov/ or http://www.powerliftingtowin.com/smolov/
+Smolov Jr., http://www.smolovjr.com/smolov-squat-program/ or http://www.powerliftingtowin.com/smolov/
+Bulgarian Training Simplified, https://www.t-nation.com/workouts/bulgarian-training-simplified
+StrongLifts Candito’s LP, http://www.powerliftingtowin.com/candito-linear-program/
+Sheiko’s Novice GreySkull LP, http://www.powerliftingtowin.com/greyskull-LP/
+Madcow 5x5, http://www.powerliftingtowin.com/madcows-5x5/
+Beyond 5/3/1, http://www.powerliftingtowin.com/beyond-531/
+The Cube Method, http://www.powerliftingtowin.com/the-cube-method/
+The Juggernaut Method, http://www.powerliftingtowin.com/the-juggernaut-method/
+Sheiko Routines 29-32, http://www.powerliftingtowin.com/sheiko/
+The Lilliebridge Method, http://www.powerliftingtowin.com/lilliebridge-method/
+Candito’s 6 Week, http://www.powerliftingtowin.com/candito-6-week-strength-program/
+10/20/Life, http://www.powerliftingtowin.com/10-20-life/
+Destroy the Opposition, http://www.powerliftingtowin.com/destroy-the-opposition/
+Coan/Philippi, http://www.powerliftingtowin.com/coan-philippi-deadlift-routine/
+Korte 3×3, http://www.powerliftingtowin.com/korte-3x3/
+RTS Intermediate, http://www.powerliftingtowin.com/rts-generalized-intermediate-program/
+Strength Theory Spreadsheet, https://docs.google.com/spreadsheets/d/1ibee7TJx8mkASZpy1qd9zayAkaPY3i9-UzugKcp9zXA/edit#gid=243418484
+TSA Intermediate Program Spreadsheet, http://thestrengthathlete.com/s/TSAintermediate.xlsx
+Disbow Bench Program Spreadsheet, https://www.reddit.com/r/powerlifting/comments/4cgbp5/revised_10x3_bench_program/
