@@ -88,7 +88,7 @@
 						<BR>
 						<button class="btn btn-lg btn-primary btn-block"  onClick="javascript:auth();return false;" >Login</button>
 					</form>
-					</div>
+                    </div>
 				</div>
 			</div>
 		      </div>
