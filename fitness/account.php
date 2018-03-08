@@ -8,10 +8,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>GetFit</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
+	<meta name="author" content="FREEHTML5.CO" />-->
 
   <!-- 
 	//////////////////////////////////////////////////////
@@ -104,12 +104,12 @@
 						<div class="row">
 							<!-- -->
 						</div>
-                        <div class ="accountEdit">
+                        <!--<div class ="accountEdit">
                             <h2>Account Information</h2>
                             <h3>Username</h3>
                             <h3>Email</h3>
                             <h3>Password</h3>
-                        </div>
+                        </div>-->
 					</div>
 				</div>
 			</div>
