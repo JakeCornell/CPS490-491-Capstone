@@ -101,17 +101,7 @@
 			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/home-image.jpg);">
 				<div class="desc animate-box">
 					<div class="container">
-						<div class="row">
-							<div class="col-md-7">
-								<h2> Let's Get Started! </h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-            
-        <p><body>
+						<p><body>
             <h3>Search  Programs</h3>
             <p>You  may search by either name</p>
             <form  method="post" action="programs.php?go"  id="searchform">
@@ -168,6 +158,12 @@
 
         </body>
         </p>
+					</div>
+				</div>
+			</div>
+		</div>
+            
+        
 		
 		<?php include 'footer.php'; ?>
 	   
