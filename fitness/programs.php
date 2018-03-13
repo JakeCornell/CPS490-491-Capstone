@@ -110,9 +110,67 @@
 				</div>
 			</div>
 		</div>
+            
+        <p><body>
+            <h3>Search  Programs</h3>
+            <p>You  may search by either name</p>
+            <form  method="post" action="programs.php?go"  id="searchform">
+                <input  type="text" name="query">
+                <input  type="submit" name="submit" value="Search">
+            </form>
+            <?php
+                $prog_name = false;
+                if(isset($_POST['submit'])){
+                    if(isset($_GET['go'])){
+                        if(isset($_POST['query'])){
+                            $query=$_POST['query'];
+                            if(preg_match("/^[  a-zA-Z]+/", $_POST['query'])){
+                                //echo $prog_name;
+                                //connect  to the database
+                                $db=mysqli_connect  ("localhost", "root",  "Goleafs18") or die ('I cannot connect to the database  because: ' . mysqli_error());
+                                //-select  the database to use
+                                //session_start();
+                                $mydb=mysqli_select_db($db, "get_fit");
+                                $min_length = 3;
+                                //-query the database table
+                                if(strlen($query) >= $min_length){
+                                    $query = htmlspecialchars($query); 
+                                    // changes characters used in html to their equivalents, for example: < to &gt;
+         
+                                    $query = mysqli_real_escape_string($db, $query);
+                                    // makes sure nobody uses SQL injection
+         
+                                    $raw_results = mysqli_query($db, "SELECT * FROM programs
+                                    WHERE (`prog_name` LIKE '%".$query."%')") or die(mysql_error());
+                                    if(mysqli_num_rows($raw_results) > 0){ // if one or more rows are returned do following
+             
+                                        while($results = mysqli_fetch_array($raw_results)){
+                                            // $results = mysql_fetch_array($raw_results) puts data from database into array, while it's valid it does the loop
+                
+                                            echo "<p><h3>".$results['prog_name']."</h3></p>";
+                                            // posts results gotten from database(title and text) you can also show id ($results['id'])
+                                        }
+             
+                                    }
+                                    else{ // if there is no matching rows do following
+                                        echo "No results";
+                                    }
+         
+                                }
+                                    else{ // if query length is less than minimum
+                                    echo "Minimum length is ".$min_length;
+                                }
+                            }
+                        }
+                    }
+                }
+            ?>
+
+        </body>
+        </p>
 		
 		<?php include 'footer.php'; ?>
-	
+	   
 
 	</div>
 	<!-- END fh5co-page -->
