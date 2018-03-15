@@ -130,8 +130,8 @@
                                     $query = mysqli_real_escape_string($db, $query);
                                     // makes sure nobody uses SQL injection
          
-                                    $raw_results = mysqli_query($db, "SELECT * FROM programs
-                                    WHERE (`prog_name` LIKE '%".$query."%')") or die(mysql_error());
+                                    $raw_results = mysqli_query($db, "SELECT * FROM programs 
+                                    INNER JOIN tags ON programs.prog_id = tags.program_id AND tags.tag LIKE '%".$query."%';") or die(mysql_error());
                                     if(mysqli_num_rows($raw_results) > 0){ // if one or more rows are returned do following
              
                                         while($results = mysqli_fetch_array($raw_results)){
