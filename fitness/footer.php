@@ -2,11 +2,11 @@
     <div id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 animate-box">
+                <div class="col-md-4">
                     <h3 class="section-title">About Us</h3>
                     <p>We are three Computer Science students with a passion for fitness. Our Goal with this project is to proviode our users a wealth of information about fitness as well as a one stop shop for their equipment and suplement needs. </p>
                 </div>
-                <div class="col-md-4 animate-box">
+                <div class="col-md-4">
                     <h3 class="section-title">Our Address</h3>
                     <ul class="contact-info">
                         <li><i class="icon-map-marker"></i>300 College Park, Dayton, OH 45469</li>
@@ -14,7 +14,7 @@
                         <li><i class="icon-envelope"></i><a href="#">fit@getfit.com</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 animate-box">
+                <div class="col-md-4">
                     <h3 class="section-title">Contact Us</h3>
                     <form class="contact-form">
                         <div class="form-group">
