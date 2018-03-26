@@ -132,12 +132,18 @@
          
                                     $raw_results = mysqli_query($db, "SELECT * FROM programs 
                                     INNER JOIN tags ON programs.prog_id = tags.program_id AND tags.tag LIKE '%".$query."%';") or die(mysql_error());
+                                    //$raw_results = mysqli_query($db, "SELECT * FROM programs INNER JOIN tags ON programs.prog_id = tags.program_id
+                                    //,MATCH(tags) AGAINST(+$query*) AS 'relevance' FROM tags WHERE MATCH(tag) AGAINST('+$query*' IN BOOLEAN MODE)
+                                    //ORDER BY relevance DESC'") or die(mysqli_error());
+                                    //$sql = "SELECT *,MATCH(tags) AGAINST(+$string*) AS `relevance` FROM `cds` WHERE MATCH(tags) AGAINST('+$string*' IN BOOLEAN MODE) ORDER BY relevance DESC;";
                                     if(mysqli_num_rows($raw_results) > 0){ // if one or more rows are returned do following
              
                                         while($results = mysqli_fetch_array($raw_results)){
                                             // $results = mysql_fetch_array($raw_results) puts data from database into array, while it's valid it does the loop
-                
-                                            echo "<p><h3>".$results['prog_name']."</h3></p>";
+                                            
+                                            echo "<div class=search-result><h3>".$results['prog_name']."</h3>";
+                                            echo "<h4>".$results['description']."</h4>";
+                                            echo "<h4>".$results['link']."</h4></div>";
                                             // posts results gotten from database(title and text) you can also show id ($results['id'])
                                         }
              
