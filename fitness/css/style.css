@@ -65,7 +65,7 @@ figure {
 .fh5co-cover,
 .fh5co-hero {
   position: relative;
-  height: 800px; }
+  height: auto; }
   @media screen and (max-width: 768px) {
     .fh5co-cover,
     .fh5co-hero {
@@ -116,7 +116,7 @@ figure {
         padding: 3em 0; } }
   .fh5co-cover .desc {
     top: 25%;
-    position: absolute;
+    position: relative;
     width: 100%;
     margin-top: -100px;
     z-index: 2;
@@ -1123,7 +1123,10 @@ form#searchform {
 
 .search-result {
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  position: relative;
+  height: 150px;
+  overflow: hidden; }
   .search-result h3 {
     color: white; }
 
