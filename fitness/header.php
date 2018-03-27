@@ -22,7 +22,7 @@
                     <li><a href="contact.php">Contact</a></li>
                     <li><a href="account.php">Account</a></li>
                     <li><a href="about.php">About</a></li>
-                    <li><a href="account.php"><?php session_start(); echo $_SESSION['username'] ?></a></li>
+                    <li><a href="account.php"><?php session_start(); /*echo $_SESSION['username']*/ ?></a></li>
                     <!-- <li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li> -->
                 </ul>
             </nav>
