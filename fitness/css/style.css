@@ -908,9 +908,6 @@ figure {
   .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
     border-color: transparent; }
 
-.js .animate-box {
-  opacity: 0; }
-
 #fh5co-wrapper {
   overflow-x: hidden;
   position: relative; }
@@ -1124,10 +1121,12 @@ figure {
 form#searchform {
   color: black; }
 
-<<<<<<< HEAD
-.search-result h3 {
-  color: white; }
-=======
+.search-result {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .search-result h3 {
+    color: white; }
+
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -1217,21 +1216,6 @@ span.psw {
   color: red;
   cursor: pointer; }
 
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s; }
-
-@-webkit-keyframes animatezoom {
-  from {
-    -webkit-transform: scale(0); }
-  to {
-    -webkit-transform: scale(1); } }
-@keyframes animatezoom {
-  from {
-    transform: scale(0); }
-  to {
-    transform: scale(1); } }
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
@@ -1240,6 +1224,5 @@ span.psw {
 
   .cancelbtn {
     width: 100%; } }
->>>>>>> 63295fe10273a7d730160932718d47d02f1a2b58
 
 /*# sourceMappingURL=style.css.map */
