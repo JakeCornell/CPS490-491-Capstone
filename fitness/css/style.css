@@ -65,7 +65,7 @@ figure {
 .fh5co-cover,
 .fh5co-hero {
   position: relative;
-  height: auto; }
+  height: 800px; }
   @media screen and (max-width: 768px) {
     .fh5co-cover,
     .fh5co-hero {
@@ -116,7 +116,7 @@ figure {
         padding: 3em 0; } }
   .fh5co-cover .desc {
     top: 25%;
-    position: relative;
+    position: absolute;
     width: 100%;
     margin-top: -100px;
     z-index: 2;
