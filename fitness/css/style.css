@@ -1123,7 +1123,10 @@ form#searchform {
 
 .search-result {
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  position: relative;
+  height: 150px;
+  overflow: hidden; }
   .search-result h3 {
     color: white; }
 
