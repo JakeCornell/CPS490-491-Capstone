@@ -70,7 +70,7 @@
         <?php include 'header.php'; ?>		
 		</div>
 		<!-- login modal -->
-		<!--<div id="loginModal" class="modal fade" role="dialog">
+		<div id="loginModal" class="modal fade" role="dialog">
   			<div class="modal-dialog " role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
@@ -90,12 +90,11 @@
 					</form>
 					</div>
 				</div>
-			</div> 
-        </div>
-    </div> -->
+			</div>
+		      </div>
+    </div>
 		</div>
-<!-- Database -->
-
+		  
 		<!-- end:fh5co-header -->
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
@@ -103,27 +102,35 @@
 				<div class="desc animate-box">
 					<div class="container">
 						<div class="row">
-							
-                            <a href="login.php" class="button">Login</a>
-                            <a href="register.php" class="button">Sign Up</a>   
-                            
+							<!-- -->
 						</div>
-<<<<<<< HEAD
-                        <div class ="accountEdit">
-                            <button><a href="manageAccount.php">Edit Account Information</a></button>
-                            <button><a href="fitnessProfile.php">Edit Fitness Profile</a></button>
+                        <div class="accountInfo">
+                            <h2>Username:</h2>
+                            <?php echo $_SESSION['username'] ?>
+                            <h2>Email:</h2>
+                            <?php
+                            $db=mysqli_connect  ("localhost", "root",  "Goleafs18") or die ('I cannot connect to the database  because: ' . mysqli_error());
+                            $mydb=mysqli_select_db($db, "get_fit");
+                            $query = $_SESSION['username'];
+                            $query = htmlspecialchars($query); 
+                            $query = mysqli_real_escape_string($db, $query);
+                            $raw_results = mysqli_query($db, "Select * From useraccount where username = '$query';") or die (mysqli_error($db));
+                            if(mysqli_num_rows($raw_results) > 0){
+                                while($results = mysqli_fetch_array($raw_results)){
+                                    echo "<p>".$results['email']."</p>"; 
+                                }
+                            }
+                            else{ // if there is no matching rows do following
+                                echo "No results";
+                            }
+                            
+                            ?>
+                        </div>
                         </div>
 					</div>
 				</div>
 			</div>
 		</div>
-=======
-                        <meta name="viewport" content="width=device-width, initial-scale=1">
-                    </div>
-                </div>
-            </div>
-        </div>
->>>>>>> a5d2a323cbbf9d660eaea64e026ecbacf2298cc8
 		
 		<?php include 'footer.php'; ?>
 	
@@ -131,7 +138,7 @@
 	</div>
 	<!-- END fh5co-page -->
 
-	
+	</div>
 	<!-- END fh5co-wrapper -->
 
 	<!-- jQuery -->

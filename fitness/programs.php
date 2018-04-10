@@ -139,7 +139,7 @@
                                                     //$raw_results = mysqli_query($db, "SELECT * FROM programs 
                                                     //INNER JOIN tags ON programs.prog_id = tags.program_id AND tags.tag LIKE '%".$query."%';") or die(mysql_error());
                                                     $raw_results = mysqli_query($db, "SELECT * FROM programs WHERE MATCH(tags) AGAINST('%".$query."%')
-                                                    ORDER BY MATCH(tags) AGAINST('%".$query."%') DESC;") or die(mysql_error());
+                                                    ORDER BY MATCH(tags) AGAINST('%".$query."%') DESC;") or die(mysqli_error());
                                                     //$raw_results = mysqli_query($db, "SELECT * FROM programs INNER JOIN tags ON programs.prog_id = tags.program_id
                                                     //,MATCH(tags) AGAINST(+$query*) AS 'relevance' FROM tags WHERE MATCH(tag) AGAINST('+$query*' IN BOOLEAN MODE)
                                                     //ORDER BY relevance DESC'") or die(mysqli_error());
