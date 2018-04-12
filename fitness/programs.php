@@ -143,7 +143,7 @@
                                                     //$raw_results = mysqli_query($db, "SELECT * FROM programs INNER JOIN tags ON programs.prog_id = tags.program_id
                                                     //,MATCH(tags) AGAINST(+$query*) AS 'relevance' FROM tags WHERE MATCH(tag) AGAINST('+$query*' IN BOOLEAN MODE)
                                                     //ORDER BY relevance DESC'") or die(mysqli_error());
-                                                    //$sql = "SELECT *,MATCH(tags) AGAINST(+$string*) AS `relevance` FROM `cds` WHERE MATCH(tags) AGAINST('+$string*' IN BOOLEAN MODE) ORDER BY relevance DESC;";
+                                                    //$sql = "SELECT *,MATCH(tags) AGAINST(+$string*) AS `relevance` FROM `cds` WHERE MATCH(tags) AGAINST('+$string*' //IN BOOLEAN MODE) ORDER BY relevance DESC;";
                                                     if(mysqli_num_rows($raw_results) > 0){ // if one or more rows are returned do following
 
                                                         while($results = mysqli_fetch_array($raw_results)){

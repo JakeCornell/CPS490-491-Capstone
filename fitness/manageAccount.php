@@ -117,13 +117,26 @@
                             $raw_results = mysqli_query($db, "Select * From useraccount where username = '$query';") or die (mysqli_error($db));
                             if(mysqli_num_rows($raw_results) > 0){
                                 while($results = mysqli_fetch_array($raw_results)){
-                                    echo "<p>".$results['email']."</p>"; 
+                                    echo "<p>".$results['email']."</p>";
+                                    $id = $results['id'];
                                 }
                             }
                             else{ // if there is no matching rows do following
                                 echo "No results";
                             }
-                            
+                            ?>
+                            <h2>Fitness Profile</h2>
+                            <?php
+                                
+                            $raw_results = mysqli_query($db, "SELECT * FROM fitnessprofile where id = $id;") or die (mysqli_error($db));   
+                            if(mysqli_num_rows($raw_results) > 0){
+                                while($results = mysqli_fetch_array($raw_results)){
+                                    echo "<p>".$results['email']."</p>";
+                                }
+                            }
+                            else{ // if there is no matching rows do following
+                                echo "No results";
+                            }
                             ?>
                         </div>
                         </div>
