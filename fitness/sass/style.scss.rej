@@ -1,0 +1,10 @@
+diff a/fitness/sass/style.scss b/fitness/sass/style.scss	(rejected hunks)
+@@ -232,7 +232,7 @@
+ 		width: 100%;
+ 		margin-top: -100px;
+ 		z-index: 2;
+-		color: $brand-white;
++		color: #333333
+ 		
+ 		@media screen and (max-width: $screen-sm) {
+ 			padding-left: 15px;
