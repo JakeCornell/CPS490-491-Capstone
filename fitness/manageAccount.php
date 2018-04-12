@@ -131,7 +131,25 @@
                             $raw_results = mysqli_query($db, "SELECT * FROM fitnessprofile where id = $id;") or die (mysqli_error($db));   
                             if(mysqli_num_rows($raw_results) > 0){
                                 while($results = mysqli_fetch_array($raw_results)){
-                                    echo "<p>".$results['email']."</p>";
+                                    echo "<p> Weight <p>";
+                                    echo "<p>".$results['weight']."</p>";
+                                    echo "<p> Height (inches)<p>";
+                                    echo "<p>".$results['height']."</p>";
+                                }
+                            }
+                            else{ // if there is no matching rows do following
+                                echo "No results";
+                            }
+                            //get fitness profile info
+                            $raw_results = mysqli_query($db, "SELECT * FROM usergoals where id = $id;") or die (mysqli_error($db));
+                            echo "<p>Here are your goals</p>";
+                            echo "<p>Each exercise is displayed with a goal weight, bodyweight and date</p>";
+                            if(mysqli_num_rows($raw_results) > 0){
+                                while($results = mysqli_fetch_array($raw_results)){
+                                    echo "<p>".$results['excercise']."<p>";
+                                    echo "<p>".$results['weight']."<p>";
+                                    echo "<p>".$results['boadyweight']."<p>";
+                                    echo "<p>".$results['date']."<p>";
                                 }
                             }
                             else{ // if there is no matching rows do following
