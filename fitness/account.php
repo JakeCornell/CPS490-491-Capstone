@@ -103,12 +103,14 @@
 				<div class="desc animate-box">
 					<div class="container">
 						<div class="row">
-							
-                            <a href="login.php" class="button">Login</a>
-                            <a href="register.php" class="button">Sign Up</a>   
-                            
+				            <div class="col-md-7">
+								<h3>Already have an account?</h3>
+								<span><a class="btn btn-primary" href="login.php">Sign in</a></span>
+                                <h3>Want to create an account?</h3>
+								<span><a class="btn btn-primary" href="register.php">Sign up</a></span>
+							</div>
 						</div>
-<<<<<<< HEAD
+
                         <div class ="accountEdit">
                             <button><a href="manageAccount.php">Edit Account Information</a></button>
                             <button><a href="fitnessProfile.php">Edit Fitness Profile</a></button>
@@ -123,7 +125,7 @@
                 </div>
             </div>
         </div>
->>>>>>> a5d2a323cbbf9d660eaea64e026ecbacf2298cc8
+
 		
 		<?php include 'footer.php'; ?>
 	
