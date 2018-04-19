@@ -558,6 +558,9 @@ td, th {
   padding-left: 10px;
   padding-right: 10px; }
 
+tr td:first-child {
+  padding-left: 0px; }
+
 .fh5co-pricing {
   padding: 7em 0; }
   @media screen and (max-width: 768px) {
