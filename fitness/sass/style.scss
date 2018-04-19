@@ -134,7 +134,7 @@ a {
 	}
 }
 p, ul, ol {
-	margin-bottom: 1.5em;
+	//margin-bottom: 1.5em; bring back is stuff looks weird
 	font-size: 20px;
 	color: $brand-lighter;
 	// font-weight: 300;
@@ -735,6 +735,16 @@ figure {
 .fh5co-table-cell {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+//TABLE DISPLAY
+td, th {
+    color: #848484;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px; 
+    padding-right: 10px;
+    
 }
 
 // PRICING

@@ -31,7 +31,6 @@ a {
     color: #4CB648 !important; }
 
 p, ul, ol {
-  margin-bottom: 1.5em;
   font-size: 20px;
   color: #848484;
   font-family: "Roboto", Arial, sans-serif; }
@@ -551,6 +550,13 @@ figure {
 .fh5co-table-cell {
   display: table-cell;
   vertical-align: middle; }
+
+td, th {
+  color: #848484;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .fh5co-pricing {
   padding: 7em 0; }

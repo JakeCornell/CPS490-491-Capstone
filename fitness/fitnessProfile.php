@@ -142,6 +142,7 @@
                             echo "<p>Here are your goals</p>";
                             echo "<p>Each exercise is displayed with a goal weight, bodyweight and date</p>";
                             echo "<table>";
+                            echo "<tr><td>excercise</td><td>weight</td><td>bodyweight</td><td>date</td></tr>";
                             if(mysqli_num_rows($raw_results) > 0){
                                 while($results = mysqli_fetch_array($raw_results)){
                                     $excercise = $results['excercise'];
