@@ -141,17 +141,20 @@
                             $raw_results = mysqli_query($db, "SELECT * FROM usergoals where id = $id;") or die (mysqli_error($db));
                             echo "<p>Here are your goals</p>";
                             echo "<p>Each exercise is displayed with a goal weight, bodyweight and date</p>";
+                            echo "<table>";
                             if(mysqli_num_rows($raw_results) > 0){
                                 while($results = mysqli_fetch_array($raw_results)){
-                                    echo "<p>".$results['excercise']."<p>";
-                                    echo "<p>".$results['weight']."<p>";
-                                    echo "<p>".$results['boadyweight']."<p>";
-                                    echo "<p>".$results['date']."<p>";
+                                    $excercise = $results['excercise'];
+                                    $weight = $results['weight'];
+                                    $bodyweight = $results['bodyweight'];
+                                    $date = $results['date'];
+                                    echo "<tr><td>".$excercise."</td><td>".$weight."</td><td>".$bodyweight."</td><td>".$date."</td></tr>";
                                 }
                             }
                             else{ // if there is no matching rows do following
                                 echo "No results";
                             }
+                            echo "</table>";
                             ?>
                         </div>
                         </div>
