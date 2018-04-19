@@ -105,9 +105,6 @@
 							<!-- -->
 						</div>
                         <div class="accountInfo">
-                            <h2>Username:</h2>
-                            <?php echo $_SESSION['username'] ?>
-                            <h2>Email:</h2>
                             <?php
                             $db=mysqli_connect  ("localhost", "root",  "Goleafs18") or die ('I cannot connect to the database  because: ' . mysqli_error());
                             $mydb=mysqli_select_db($db, "get_fit");
@@ -125,7 +122,37 @@
                                 echo "No results";
                             }
                             ?>
-                            
+                            <h2>Fitness Profile</h2>
+                            <?php
+                                
+                            $raw_results = mysqli_query($db, "SELECT * FROM fitnessprofile where id = $id;") or die (mysqli_error($db));   
+                            if(mysqli_num_rows($raw_results) > 0){
+                                while($results = mysqli_fetch_array($raw_results)){
+                                    echo "<p> Weight <p>";
+                                    echo "<p>".$results['weight']."</p>";
+                                    echo "<p> Height (inches)<p>";
+                                    echo "<p>".$results['height']."</p>";
+                                }
+                            }
+                            else{ // if there is no matching rows do following
+                                echo "No results";
+                            }
+                            //get fitness profile info
+                            $raw_results = mysqli_query($db, "SELECT * FROM usergoals where id = $id;") or die (mysqli_error($db));
+                            echo "<p>Here are your goals</p>";
+                            echo "<p>Each exercise is displayed with a goal weight, bodyweight and date</p>";
+                            if(mysqli_num_rows($raw_results) > 0){
+                                while($results = mysqli_fetch_array($raw_results)){
+                                    echo "<p>".$results['excercise']."<p>";
+                                    echo "<p>".$results['weight']."<p>";
+                                    echo "<p>".$results['boadyweight']."<p>";
+                                    echo "<p>".$results['date']."<p>";
+                                }
+                            }
+                            else{ // if there is no matching rows do following
+                                echo "No results";
+                            }
+                            ?>
                         </div>
                         </div>
 					</div>
