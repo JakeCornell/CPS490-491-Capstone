@@ -149,6 +149,7 @@
                             $raw_results = mysqli_query($db, "SELECT * FROM usergoals where id = $id;") or die (mysqli_error($db));
                             echo "<p>Here are your goals</p>";
                             echo "<p>Each exercise is displayed with a goal weight, bodyweight and date</p>";
+                            echo "<p>To remove a goal, simply click the corespoonding X on the side of the table</p>";
                             echo "<table>";
                             echo "<tr><td>Excercise</td><td>Weight</td><td>Bodyweight</td><td>Date</td></tr>";
                             if(mysqli_num_rows($raw_results) > 0){
