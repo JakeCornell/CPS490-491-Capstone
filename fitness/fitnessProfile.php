@@ -116,7 +116,6 @@
                                 while($results = mysqli_fetch_array($raw_results)){
                                     echo "<p>".$results['email']."</p>";
                                     $id = $results['id'];
-                                    echo $id;
                                 }
                             }
                             else{ // if there is no matching rows do following
