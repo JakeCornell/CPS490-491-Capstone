@@ -161,7 +161,7 @@
                                 echo "Please input the same two adresses}";
                             }
                             }
-                            error_reporting(E_ALL); d
+                            error_reporting(E_ALL);
                             
                             ?>
                         </div>

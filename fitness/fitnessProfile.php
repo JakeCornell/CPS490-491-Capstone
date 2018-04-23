@@ -116,6 +116,7 @@
                                 while($results = mysqli_fetch_array($raw_results)){
                                     echo "<p>".$results['email']."</p>";
                                     $id = $results['id'];
+                                    echo $id;
                                 }
                             }
                             else{ // if there is no matching rows do following
@@ -142,9 +143,10 @@
                             echo "<p>Here are your goals</p>";
                             echo "<p>Each exercise is displayed with a goal weight, bodyweight and date</p>";
                             echo "<table>";
-                            echo "<tr><td>excercise</td><td>weight</td><td>bodyweight</td><td>date</td></tr>";
+                            echo "<tr><td>Excercise</td><td>Weight</td><td>Bodyweight</td><td>Date</td></tr>";
                             if(mysqli_num_rows($raw_results) > 0){
                                 while($results = mysqli_fetch_array($raw_results)){
+                                    $exid = $results['id'];
                                     $excercise = $results['excercise'];
                                     $weight = $results['weight'];
                                     $bodyweight = $results['bodyweight'];
@@ -156,6 +158,54 @@
                                 echo "No results";
                             }
                             echo "</table>";
+                            ?>
+                            <form method="post" action="fitnessProfile.php?go" id="goalForm">
+                                <h2>New Goal Creation</h2>
+                                <h3>Excercise</h3>
+                                <input type="text" name="Excercise">
+                                <h3>Weight</h3>
+                                <input type="text" name="Weight">
+                                <h3>Bodyweight</h3>
+                                <input type="text" name="Bodyweight">
+                                <h3>Date</h3>
+                                <input type="date" name="Date">
+                                <input type="submit" name="submit" value="Submit">
+                            </form>
+                            <?php
+                            if (isset($_POST['Excercise'])){
+                                $excersice = $_POST['Excercise'];
+                            } else {
+                                $excersice = "";
+                            }
+                            if (isset($_POST['Weight'])){
+                                $weight = $_POST['Weight'];
+                            } else {
+                                $weight = "";
+                            }
+                            if (isset($_POST['Bodyweight'])){
+                                $bodyWeight = $_POST['Bodyweight'];
+                            } else {
+                                $bodyWeight = "";
+                            }
+                            if (isset($_POST['Date'])){
+                                $date = $_POST['Date'];
+                            } else {
+                                $date = "";
+                            }
+                            $db=mysqli_connect  ("localhost", "root",  "Goleafs18") or die ('I cannot connect to the database  because: ' . mysqli_error());
+                            $mydb=mysqli_select_db($db, "get_fit");
+                            $query = $_SESSION['username'];
+                            $query = htmlspecialchars($query); 
+                            $query = mysqli_real_escape_string($db, $query);
+                            $raw_results = mysqli_query($db, "Select * From useraccount where username = '$query';") or die (mysqli_error($db));
+                            if(mysqli_num_rows($raw_results) > 0){
+                                while($results = mysqli_fetch_array($raw_results)){
+                                    $id = $results['id'];
+                                }
+                            }
+                            if ($bodyWeight != 0){
+                            $sql = mysqli_query($db, "Insert Into usergoals (id, excercise, weight, bodyweight, date) Values ('$id', '$excersice','$weight','$bodyWeight','$date');") or die (mysqli_error($db));
+                            }
                             ?>
                         </div>
                         </div>
