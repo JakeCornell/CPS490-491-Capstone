@@ -177,7 +177,7 @@
                 </div>
             </div>
 
-            <?php include 'footer.php'; ?>
+            <?php //include 'footer.php'; ?>
 
         </div>
         <!-- END fh5co-page -->

@@ -106,8 +106,11 @@
                         <div class="accountInfo">
                             <h2>Please enter a new password</h2>
                             <form method="post" action="passwordChange.php?go" id="passwordForm">
+                                <h3>Current Password</h3>
                                 <input type="text" name="currentpassword">
+                                <h3>New Password</h3>
                                 <input type="text" name="newpassword">
+                                <h3>Confirm New Password</h3>
                                 <input type="text" name="confirmnewpassword">
                                 <input type="submit" name="submit" value="Change">
                             </form>

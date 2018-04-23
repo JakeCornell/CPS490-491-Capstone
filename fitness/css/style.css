@@ -66,8 +66,14 @@ figure {
 
 .fh5co-cover,
 .fh5co-hero {
-  position: relative;
-  height: 800px; }
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  overflow-y: scroll; }
   @media screen and (max-width: 768px) {
     .fh5co-cover,
     .fh5co-hero {
@@ -96,63 +102,60 @@ figure {
   z-index: 1;
   background: rgba(0, 0, 0, 0.3); }
 
-.fh5co-cover {
-  background-size: cover;
-  position: relative; }
+@media screen and (max-width: 768px) {
+  .fh5co-cover {
+    heifght: inherit;
+    padding: 3em 0; } }
+.fh5co-cover .btn {
+  padding: 1em 2em;
+  opacity: .9;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px; }
+.fh5co-cover.fh5co-cover_2 {
+  height: 600px; }
   @media screen and (max-width: 768px) {
-    .fh5co-cover {
+    .fh5co-cover.fh5co-cover_2 {
       heifght: inherit;
       padding: 3em 0; } }
-  .fh5co-cover .btn {
-    padding: 1em 2em;
-    opacity: .9;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    border-radius: 30px; }
-  .fh5co-cover.fh5co-cover_2 {
-    height: 600px; }
+.fh5co-cover .desc {
+  top: 25%;
+  position: absolute;
+  width: 100%;
+  margin-top: -100px;
+  z-index: 2;
+  color: #333333; }
+  @media screen and (max-width: 768px) {
+    .fh5co-cover .desc {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  .fh5co-cover .desc h2 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 60px;
+    letter-spacing: 1px; }
     @media screen and (max-width: 768px) {
-      .fh5co-cover.fh5co-cover_2 {
-        heifght: inherit;
-        padding: 3em 0; } }
-  .fh5co-cover .desc {
-    top: 25%;
-    position: absolute;
-    width: 100%;
-    margin-top: -100px;
-    z-index: 2;
-    color: #333333; }
-    @media screen and (max-width: 768px) {
-      .fh5co-cover .desc {
-        padding-left: 15px;
-        padding-right: 15px; } }
-    .fh5co-cover .desc h2 {
-      color: #fff;
-      font-size: 55px;
-      font-weight: 300;
-      margin-bottom: 10px;
-      line-height: 60px;
-      letter-spacing: 1px; }
-      @media screen and (max-width: 768px) {
-        .fh5co-cover .desc h2 {
-          font-size: 40px;
-          line-height: 50px; } }
-    .fh5co-cover .desc span {
-      display: block;
-      margin-bottom: 25px;
-      font-size: 24px;
-      letter-spacing: 1px;
+      .fh5co-cover .desc h2 {
+        font-size: 40px;
+        line-height: 50px; } }
+  .fh5co-cover .desc span {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.8); }
+    .fh5co-cover .desc span i {
+      color: #DA1212; }
+    .fh5co-cover .desc span a {
       color: rgba(255, 255, 255, 0.8); }
-      .fh5co-cover .desc span i {
-        color: #DA1212; }
-      .fh5co-cover .desc span a {
-        color: rgba(255, 255, 255, 0.8); }
-        .fh5co-cover .desc span a:hover, .fh5co-cover .desc span a:focus {
-          color: #fff !important; }
-        .fh5co-cover .desc span a.fh5co-site-name {
-          padding-bottom: 2px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
+      .fh5co-cover .desc span a:hover, .fh5co-cover .desc span a:focus {
+        color: #fff !important; }
+      .fh5co-cover .desc span a.fh5co-site-name {
+        padding-bottom: 2px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
 
 /* Superfish Override Menu */
 .sf-menu {
@@ -919,10 +922,6 @@ tr td:first-child {
     outline: none !important; }
   .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
     border-color: transparent; }
-
-#fh5co-wrapper {
-  overflow-x: hidden;
-  position: relative; }
 
 .fh5co-offcanvas {
   overflow: hidden; }
