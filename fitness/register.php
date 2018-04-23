@@ -52,7 +52,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     } else {
         $email = trim($_POST["email"]);
     }
-    
+     
     // Validate password
     if(empty(trim($_POST['password']))){
         $password_err = "Please enter a password.";     

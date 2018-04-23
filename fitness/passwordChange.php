@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -105,28 +104,39 @@
 							<!-- -->
 						</div>
                         <div class="accountInfo">
-                            <h2>Username:</h2>
-                            <?php echo $_SESSION['username'] ?>
-                            <h2>Email:</h2>
+                            <h2>Please enter a new password</h2>
+                            <form method="post" action="passwordChange.php?go" id="passwordForm">
+                                <input type="text" name="currentpassword">
+                                <input type="text" name="newpassword">
+                                <input type="text" name="confirmnewpassword">
+                                <input type="submit" name="submit" value="Change">
+                            </form>
                             <?php
+                            $id = $_SESSION['username'];
+                            $currentpassword = $_POST['currentpassword'];
+                            $currentpassword = password_hash($currentpassword, PASSWORD_DEFAULT);
+                            $newpassword = $_POST['newpassword'];
+                            $confirmnewpassword = $_POST['confirmnewpassword'];
                             $db=mysqli_connect  ("localhost", "root",  "Goleafs18") or die ('I cannot connect to the database  because: ' . mysqli_error());
                             $mydb=mysqli_select_db($db, "get_fit");
-                            $query = $_SESSION['username'];
                             $query = htmlspecialchars($query); 
                             $query = mysqli_real_escape_string($db, $query);
-                            $raw_results = mysqli_query($db, "Select * From useraccount where username = '$query';") or die (mysqli_error($db));
-                            if(mysqli_num_rows($raw_results) > 0){
-                                while($results = mysqli_fetch_array($raw_results)){
-                                    echo "<p>".$results['email']."</p>";
-                                    $id = $results['id'];
+                            $raw_results = mysqli_query($db, "Select password From useraccount where username = '$id';") or die (mysqli_error($db));
+                            if($results['password'] = $currentpassword){
+                                if($newpassword = $confirmnewpassword) {
+                                    $newpassword = password_hash($newpassword, PASSWORD_DEFAULT);
+                                    $sql=mysqli_query($db, "UPDATE useraccount SET password='$newpassword' where username='$id';") or die (mysqli_error($db));
+                                    if($sql)
+                                    {
+                                    echo "Congratulations You have successfully changed your password";
+                                    }
+                                    else
+                                    {
+                                    echo "The new password and confirm new password fields must be the same";
+                                    }
                                 }
                             }
-                            else{ // if there is no matching rows do following
-                                echo "No results";
-                            }
                             ?>
-                            <h3>Would like to change your password?</h3>
-                            <span><a class="btn btn-primary" href="passwordChange.php">Chnage Password</a></span>
                         </div>
                         </div>
 					</div>
