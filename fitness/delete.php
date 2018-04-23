@@ -109,6 +109,14 @@
                             $db=mysqli_connect  ("localhost", "root",  "Goleafs18") or die ('I cannot connect to the database  because: ' . mysqli_error());
                             $mydb=mysqli_select_db($db, "get_fit");
                             $query = $_SESSION['username'];
+                            if (!isset($_GET['id']))
+                            {
+                                echo 'No ID was given...';
+                                exit;
+                            } else {
+                                $entID = $_GET['id'];
+                            }
+                            $sql = mysqli_query($db, "Delete From usergoals where entryID = '$entID';") or die (mysqli_error($db));
                             $query = htmlspecialchars($query); 
                             $query = mysqli_real_escape_string($db, $query);
                             $raw_results = mysqli_query($db, "Select * From useraccount where username = '$query';") or die (mysqli_error($db));
