@@ -125,7 +125,8 @@
                                 echo "No results";
                             }
                             ?>
-                            
+                            <h3>Would you like to edit you account information or change your password?</h3>
+                            <span><a class="btn btn-primary" href="accountUpdate.php">Update Information</a></span>
                         </div>
                         </div>
 					</div>
