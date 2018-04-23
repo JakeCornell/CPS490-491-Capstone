@@ -136,7 +136,7 @@
                             $raw_results = mysqli_query($db, "SELECT * FROM fitnessprofile where id = $id;") or die (mysqli_error($db));   
                             if(mysqli_num_rows($raw_results) > 0){
                                 while($results = mysqli_fetch_array($raw_results)){
-                                    echo "<p> Weight <p>";
+                                    echo "<p> Weight (pounds)<p>";
                                     echo "<p>".$results['weight']."</p>";
                                     echo "<p> Height (inches)<p>";
                                     echo "<p>".$results['height']."</p>";
