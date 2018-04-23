@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -105,32 +104,66 @@
 							<!-- -->
 						</div>
                         <div class="accountInfo">
-                            <h3>Username:</h3>
-                            <?php 
-                            echo "<p>".$_SESSION['username']."</p>"; 
-                            ?>
-                            <h3>Email:</h3>
-                            <?php
-                            $db=mysqli_connect  ("localhost", "root",  "Goleafs18") or die ('I cannot connect to the database  because: ' . mysqli_error());
-                            $mydb=mysqli_select_db($db, "get_fit");
-                            $query = $_SESSION['username'];
-                            $query = htmlspecialchars($query); 
-                            $query = mysqli_real_escape_string($db, $query);
-                            $raw_results = mysqli_query($db, "Select * From useraccount where username = '$query';") or die (mysqli_error($db));
-                            if(mysqli_num_rows($raw_results) > 0){
-                                while($results = mysqli_fetch_array($raw_results)){
-                                    echo "<p>".$results['email']."</p>";
-                                    $id = $results['id'];
+                            <h2>Please enter a new Email Adress</h2>
+                            <form method="post" action="emailChange.php?go" id="emailForm">
+                                <h3>Current Email:</h3>
+                                <?php
+                                $db=mysqli_connect  ("localhost", "root",  "Goleafs18") or die ('I cannot connect to the database  because: ' . mysqli_error());
+                                $mydb=mysqli_select_db($db, "get_fit");
+                                $query = $_SESSION['username'];
+                                $query = htmlspecialchars($query); 
+                                $query = mysqli_real_escape_string($db, $query);
+                                $raw_results = mysqli_query($db, "Select * From useraccount where username = '$query';") or die (mysqli_error($db));
+                                if(mysqli_num_rows($raw_results) > 0){
+                                    while($results = mysqli_fetch_array($raw_results)){
+                                        $email = $results['email'];
+                                        echo "<p>".$results['email']."</p>";
+                                        $id = $results['id'];
+                                    }
                                 }
+                                else{ // if there is no matching rows do following
+                                    echo "No results";
+                                }
+                                ?>
+                                <h3>New Email</h3>
+                                <input type="text" name="newEmail">
+                                <h3>Confirm New Email</h3>
+                                <input type="text" name="confirmnewEmail">
+                                <input type="submit" name="submit" value="Change">
+                            </form>
+                            <?php
+                            $id = $_SESSION['username'];
+                            if (isset($_POST['newEmail'])){
+                                $newEmail = $_POST['newEmail'];
+                            } else {
+                                $newEmail = "new";
                             }
-                            else{ // if there is no matching rows do following
-                                echo "No results";
+                            if (isset($_POST['confirmnewEmail'])){
+                                $confirmnewEmail = $_POST['confirmnewEmail'];
+                            } else {
+                                $confirmnewEmail = "confirmed";
                             }
+                            error_reporting(0);
+                            $raw_results = "raw";
+                            $raw_results = mysqli_query($db, "Select * From useraccount where email = '$newEmail';") or die (mysqli_error($db));
+                            if(!raw_results){
+                                if ($newEmail = $confirmnewEmail and $newEmail != $email){
+                                $db=mysqli_connect  ("localhost", "root",  "Goleafs18") or die ('I cannot connect to the database  because: ' . mysqli_error());
+                                $mydb=mysqli_select_db($db, "get_fit");
+                                $sql=mysqli_query($db, "UPDATE useraccount SET email='$newEmail' where username='$id';") or die (mysqli_error($db));
+                                if($sql)
+                                {
+                                echo "Congratulations You have successfully changed your email";
+                                }
+                            } else if($newEmail = $email){
+                                echo "Input a new email adress";
+                            } else {
+                                echo "Please input the same two adresses}";
+                            }
+                            }
+                            error_reporting(1);
+                            
                             ?>
-                            <h3>Would like to change your email?</h3>
-                            <span><a class="btn btn-primary" href="emailChange.php">Change Email</a></span>
-                            <h3>Would like to change your password?</h3>
-                            <span><a class="btn btn-primary" href="passwordChange.php">Change Password</a></span>
                         </div>
                         </div>
 					</div>
