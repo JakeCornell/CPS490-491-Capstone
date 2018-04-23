@@ -111,6 +111,7 @@
                             ?>
                             <h3>Email:</h3>
                             <?php
+                            error_reporting(0);
                             $db=mysqli_connect  ("localhost", "root",  "Goleafs18") or die ('I cannot connect to the database  because: ' . mysqli_error());
                             $mydb=mysqli_select_db($db, "get_fit");
                             $query = $_SESSION['username'];
@@ -126,6 +127,7 @@
                             else{ // if there is no matching rows do following
                                 echo "No results";
                             }
+                            error_reporting(E_ALL); 
                             ?>
                             <h3>Would like to change your email?</h3>
                             <span><a class="btn btn-primary" href="emailChange.php">Change Email</a></span>
