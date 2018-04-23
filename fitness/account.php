@@ -108,12 +108,13 @@
 								<span><a class="btn btn-primary" href="login.php">Sign in</a></span>
                                 <h3>Want to create an account?</h3>
 								<span><a class="btn btn-primary" href="register.php">Sign up</a></span>
-                                <h3>Want to edit your account?</h3>
-                                <span><a class="btn btn-primary" href="manageAccount.php">Account Info</a></span>
-                                <h3>Want to view your fitness profile?</h3>
-                                <span><a class="btn btn-primary" href="fitnessProfile.php">Fitness Profile</a></span>
 							</div>
 						</div>
+
+                        <div class ="accountEdit">
+                            <button><a href="manageAccount.php">Edit Account Information</a></button>
+                            <button><a href="fitnessProfile.php">Edit Fitness Profile</a></button>
+                        </div>
 					</div>
 				</div>
 			</div>
