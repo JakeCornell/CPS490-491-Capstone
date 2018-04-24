@@ -149,9 +149,8 @@
                                                         while($results = mysqli_fetch_array($raw_results)){
                                                         // $results = mysql_fetch_array($raw_results) puts data from database into array, while it's valid it does the loop
 
-                                                        echo "<div class=search-result><h3>".$results['prog_name']."</h3>";
-                                                        echo "<h4>".$results['description']."</h4>";
-                                                        echo "<h4>".$results['link']."</h4></div>";
+                                                        echo "<div class=search-result><h3><a href=".$results['link'].">".$results['prog_name']."</a></h3>";
+                                                        echo "<h4>".$results['description']."</h4></div>";
                                                         // posts results gotten from database(title and text) you can also show id ($results['id'])
                                                         }
 
