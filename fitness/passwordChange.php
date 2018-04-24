@@ -115,6 +115,7 @@
                                 <input type="submit" name="submit" value="Change">
                             </form>
                             <?php
+                            error_reporting(0);
                             $id = $_SESSION['username'];
                             $currentpassword = $_POST['currentpassword'];
                             $currentpassword = password_hash($currentpassword, PASSWORD_DEFAULT);
@@ -139,7 +140,9 @@
                                     }
                                 }
                             }
+                            error_reporting(E_ALL);
                             ?>
+                            
                         </div>
                         </div>
 					</div>

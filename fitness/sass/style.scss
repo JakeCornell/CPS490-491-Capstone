@@ -136,7 +136,7 @@ a {
 p, ul, ol {
 	//margin-bottom: 1.5em; bring back is stuff looks weird
 	font-size: 20px;
-	color: $brand-lighter;
+	color: white;
 	// font-weight: 300;
 	font-family: $font-primary;
 }
@@ -750,7 +750,7 @@ figure {
 
 //TABLE DISPLAY
 td, th {
-    color: #848484;
+    color: white;
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 10px; 

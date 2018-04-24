@@ -32,7 +32,7 @@ a {
 
 p, ul, ol {
   font-size: 20px;
-  color: #848484;
+  color: white;
   font-family: "Roboto", Arial, sans-serif; }
 
 h1, h2, h5, h6 {
@@ -558,7 +558,7 @@ figure {
   vertical-align: middle; }
 
 td, th {
-  color: #848484;
+  color: white;
   padding-bottom: 5px;
   padding-top: 5px;
   padding-left: 10px;
